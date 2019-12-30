@@ -1,0 +1,15 @@
+news_sites:
+  eluniversal:
+    url: https://www.eluniversal.com.co
+    queries:
+      homepage_article_links: ['.template-eu-11 a', '.template-eu-16 a', '.template-eu-1 a']
+      article_content: 'article .paragraph'
+      article_title: '.template-eu-2 .headline .priority-content'
+      article_date: '.datefrom'
+  elespectador:
+    url: https://www.elespectador.com
+    queries:
+      homepage_article_links: ['.node-title h1 a', '.node-title h2 a']
+      article_content: '.node-body'
+      article_title: '.node-title h1'
+      article_date: '.group-node-info .node-post-date'
